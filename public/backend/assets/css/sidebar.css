@@ -1,0 +1,93 @@
+.sidebar-wrapper {
+    width: 250px;
+    transition: all 0.3s ease;
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-wrapper.sidebar-collapsed {
+    width: 70px;
+}
+
+.sidebar-wrapper.sidebar-collapsed .logo-text,
+.sidebar-wrapper.sidebar-collapsed .menu-title {
+    display: none;
+}
+
+.sidebar-wrapper.sidebar-collapsed .parent-icon {
+    margin-right: 0;
+}
+
+.sidebar-wrapper.sidebar-collapsed .submenu {
+    display: none;
+}
+
+.sidebar-header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.toggle-icon i {
+    transition: all 0.3s ease;
+}
+
+.metismenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.metismenu .menu-item {
+    position: relative;
+}
+
+.metismenu .menu-item a {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.metismenu .menu-item a:hover {
+    background: #f8f9fa;
+}
+
+.parent-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.submenu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: none;
+}
+
+.submenu a {
+    padding-left: 45px !important;
+}
+
+.mm-show {
+    display: block;
+} 
